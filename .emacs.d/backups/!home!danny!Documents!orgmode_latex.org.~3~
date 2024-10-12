@@ -1,0 +1,26 @@
+#+Title: Testing LaTeX in Orgmode
+#+Author: Danny Tan
+#+STARTUP: latexpreview
+
+\[
+e^{i\pi} = -1
+\]
+
+  \[
+\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
+\]
+
+*** Its possible to preview the above LaTeX with C-c C-x C-l toggle 
+
+\[\LaTeX \]
+
+
+Here is some inline \(\LaTeX\) as we can continue on writing this sentence.
+
+lets check out if we have a typesetting error?
+
+\[\frac{x}{y}\]
+
+need to look into :scale setting in the config file. the LaTeX renders are a little small for me to read in great detail.
+
+

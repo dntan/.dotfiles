@@ -1,0 +1,187 @@
+#+Title: Testing LaTeX in Orgmode
+#+Author: Danny Tan
+#+STARTUP: latexpreview
+#+Description: This doc is for testing out LaTeX previews and discovering orgmode note taking for math topics.
+
+* Different types of Org-mode and LaTeX setups
+
+** (my current usage) - vanilla orgmode + texlive install and packages  in the background.
+
+** suggested Emacs + AUCTeX + Yasnippet
+
+
+
+
+\[
+e^{i\pi} = -1
+\]
+
+  \[
+\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
+\]
+
+*** Its possible to preview the above LaTeX with C-c C-x C-l toggle 
+
+\[\LaTeX \]
+
+
+Here is some inline \(\LaTeX\) as we can continue on writing this sentence.
+
+lets check out if we have a typesetting error?
+
+\[\frac{x}{y}\]
+
+need to look into :scale setting in the config file. the LaTeX renders are a little small for me to read in great detail.
+
+\(\Sigma\) is representative of sum of
+
+\(\sigma\) is representative of the standard deviation. certain measures away from the mean.
+
+\(\mu\) is representative of the population mean.
+
+\(r\) is the correlation co-efficient. how well the data fits the model. close to 1 is positive linear relationship
+closer to -1 is a negative linear relationship.
+
+\(z\) score measures how many standard deviations above or below the mean a data point is.
+
+It can be calculated by:
+
+\[
+z = \frac{x - \mu}{\sigma}
+\]
+
+
+
+
+mean of a sample can be represented as:
+
+\[\overline{x}\]
+
+
+Hello \(\bar{x}\) this and that is inline.
+
+I'm not sure which is the preferred or correct one. light line/bar above?
+
+It will be interesting to learn about set notation! its coming up soon in Unit: Probabilty.
+I don't remember covering this in High School.
+
+I'm surprised a lot of these topics are not common knowledge to most people. Or maybe they learn "about" it but never apply or practice
+it to any degree.
+
+I don't really have a need to export as LaTeX PDF document from orgmode right now. I just need the ability to take
+
+* Set operations
+
+A set is a collection of /distinct/ objects.
+
+\(x = \{3, 12, 5, 13\}\)
+
+\(y = \{14, 15, 6, 3\}\)
+
+\(\cap\) is an *intersection* and can be a representation of *AND*
+
+\(x \cap y = \{3\}\)
+
+
+\(\cup\) is a *Union* and can represent *OR*
+
+\(x \cup y = \{3, 12, 5, 13, 14, 15, 6\}\)
+
+is it possible for me to draw a venn diagram with LaTeX? does it require additional packages?
+
+
+** The Differences between sets
+
+A = {5,3,17,12,19}
+B = {17,19,6}
+
+A - B = {5, 3, 12}
+
+or
+
+Relative complement of Set B in A
+
+\(A \setminus B\) Yes! this LaTeX is set with \setminus
+
+Things that NOT in A
+
+NOTE: removing "6" from set A. doesn't do anything it remains without 6.
+
+
+
+
+
+\(B \setminus A = B - A\)
+
+\(B \setminus A = \{ 6 \}\)
+
+null set has no objects in it.
+
+** Universal Set
+
+\(\cup  vs  \bigcup\)
+
+\(U\) maybe thiss is the universal set?
+
+or
+
+\(\mathbb U\) ahhhh this is the universe set. \mathbb U is used as the LaTeX and bb stands for blackboard????
+
+set of real numbers \(\mathbb R\)
+
+rational numbers \(\mathbb Q\)
+
+Integers \(\mathbb Z\)
+
+
+Membership of a set?
+
+e.g.
+
+\[5 \in A\]
+
+we can use \in for elements that are members of a set. and we can use the \notin for members not in a set.
+
+\[65 \notin A \]
+
+
+
+is it the same as \(\epsilon\) nearly???
+
+\[\epsilon\]
+
+\epsilon looks different.
+
+*** Some equivalent set notation:
+
+example
+
+C = {-5, 0, 7}
+
+\[C' = \mathbb U - C = \mathbb U \setminus C\]
+
+above description:
+C complement is equal to universe minus C subset which is also equal to universal set /relative complement/ of C
+
+This is ALL the stuff OUTSIDE the C set.
+
+** Subset, strict subset and superset
+
+A = {1, 3, 5 ,7, 18}
+B = {1, 7, 18}
+C = {18, 7, 1, 19}
+
+**** B is a subset A
+
+
+ \[B \subseteq A\]
+
+**** B is a "strict" subset
+
+\[B \subsetneq A\]
+
+everything thing in B is in A BUT everything in A is not in B.
+
+\(B \subsetneq C\)
+
+

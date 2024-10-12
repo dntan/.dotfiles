@@ -1,0 +1,18 @@
+#+Title: Learning bash scripting
+#+Author: Danny
+
+* Learn Bash Scripting
+
+** How to get started with a minimal start
+
+At the top of a .sh bash scripting file we need to let the system know to run this as a bash script.
+we include a header #!/bin/basha
+
+#+BEGIN_SRC bash
+  #!/bin/bash
+  sudo pacman -Syyu --noconfirm
+#+END_SRC
+
+To make a .sh file executable.
+chmod +x filename OR foldername
+

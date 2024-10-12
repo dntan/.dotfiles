@@ -1,0 +1,16 @@
+* Arcolinx Exploration and designing personal configuration
+
+** Arcolinux ISO
+Use the ARCONET (Advanced):
+*** Desktop environment:
+Xfce4
+*** Window manager
+Awesome (Lua based)
+
+** Choices
+What do I need in a system?
+*** Applications
+- firefox
+- discord
+- Alacritty
+*** Utilities

@@ -1,0 +1,26 @@
+#+TITLE: Automating system preferences
+#+Author:  Danny Tan
+
+* Discover how to maintain dotfiles.
+
+*** Exploring Arcolinux personal folder and .config
+
+1. Configure everything in the .config folder ~/.config in a fresh arcolinux install the way I like it.
+2. Archive it as tar.gz
+3. "personal" is an alias we can use to copy everything from the personal folder to the home dir.
+
+   
+
+
+
+** Other ideas:
+- i'd like to script the checksums process for new ISOs when trying things out on virtualbox,
+- What is .local? lets have a look.
+
+
+* The lazy version
+This is just method is just to use doom emacs
+
+- it is preferred to run emacs --daemon
+- Use emacsclient
+

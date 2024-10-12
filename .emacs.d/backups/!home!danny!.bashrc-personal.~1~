@@ -1,0 +1,3 @@
+# This is my personal .bashrc file it will get added to the regular .bashrc automatically.
+
+alias e="emacsclient -t"

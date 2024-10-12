@@ -1,0 +1,120 @@
+#+title: Danny's emacs config
+
+* Danny's emacs config
+
+This is my first attempt to write my emacs config as an org file.
+
+Something handy for myself
+C-c C-,
+brings up a menu to insert a source code block. this is better than typing it out.
+This is a standard gnu emacs keybinding
+we can use this if we did not turn on (org
+
+
+** Basics
+GUI preferences.
+
+#+begin_src emacs-lisp
+
+  ;;This is Danny's emacs config file as init.el
+
+  (setq inhibit-startup-message t)
+
+  (scroll-bar-mode -1)        ; Disable visible scrollbar
+  (tool-bar-mode -1)          ; Disable the toolbar
+  (tooltip-mode -1)           ; Disable tooltips
+  (set-fringe-mode 10)        ; Give some breathing room
+
+  ;;(menu-bar-mode -1)            ; Disable the menu bar
+
+  (savehist-mode +1)
+  (setq savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
+
+  ;; Set up the visible bell
+  (setq visible-bell t)
+
+  (global-display-line-numbers-mode 1) ; line num
+
+#+end_src
+
+** Backups
+
+#+begin_src emacs-lisp
+
+  (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
+  (setq delete-old-versions -1)
+  (setq version-control t)
+  (setq vc-make-backup-files t)
+  (setq auto-save-file-name-transforms '((".*" "~/.emacs.d/auto-save-list/" t)))
+
+#+end_src
+
+** Fonts
+
+#+begin_src emacs-lisp
+
+  (set-face-attribute 'default nil :font "DejaVu Sans" :height 130)
+  
+#+end_src
+
+** General keybindings
+I can set custom keybindings here.
+
+#+begin_src emacs-lisp
+  ;;some elisp code go here
+#+end_src
+
+
+** Org mode
+
+*** Org-toc
+Consider using toc-org via use package. 
+
+*** Org-tempo
+
+#+begin_src emacs-lisp
+
+  (require 'org-tempo) ;;this orgmode feature is a must <s tab brings up a src code block!
+  
+#+end_src
+
+*** Org bullets
+Get Nicer bullets!
+
+#+begin_src emacs-lisp
+
+  ;;(add-hook 'org-mode-hook 'org-indent-mode)
+  ;;(use-package org-bullets)
+  ;;(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+
+#+end_src
+
+** Package Manager
+
+#+begin_src emacs-lisp
+
+#+end_src
+
+** Shells
+
+*** eshell
+can config eshell profile and alises.
+eshell is already a part of gnu emacs.
+
+*** vterm
+need use-package to run vterm
+Can set vterm to run bash, zsh, fish etc.
+
+** Themes
+
+#+begin_src emacs-lisp
+
+ (load-theme 'tango-dark)
+
+#+end_src
+
+** Which-Key
+
+Get Which-Key it is a useful package for reminding us what keybindings do what.
+
+

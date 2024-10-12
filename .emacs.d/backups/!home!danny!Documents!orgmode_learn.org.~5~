@@ -1,0 +1,50 @@
+#+Title: Org mode basics
+#+Date: <2024-06-15 Sat>
+
+
+* Org basics for Danny:
+
+** key learnings today:
+shift+tab = fold or unfold all section headings
+C-c + . = Insert a timestamp e.g. in the #+Date: metadata above
+
+Should I store my emacs config and init.el file in the default ~/.emacs.d location?
+or have it preferences to .config with all the other arcolinux configurations?
+
+however during update or skel it may get removed. and I have to reinstate it every time
+
+** How do I configure my org mode with custom key bindings?
+- find a resource to learn this from DT or System crafters?
+
+* Emacs and Emacsclient
+- side note to set up emacs --daemon
+  and use the emacsclient instead of regular emacs.
+
+if the daemon is launched and a emacs server is running
+
+we can use emacsclient -c -a 'emacs'
+
+-c = new window
+-a = alternative editor in this case we want to launch a regular emacs sesssion.
+
+
+  Save on start up config load time once, and run multiple sessions of
+  that emacs that don't require an individual session. e.g. if launched
+  from the terminal it won't hold that terminal session.
+
+** How can I make it easier to create src code blocks with a keybinding
+
+YES! below is a built in feature with orgmode that once included it lets us create source blocks easily.
+
+#+begin_src emacs-lisp
+
+  (require 'org-tempo) ;;this orgmode feature is a must <s tab brings up a src code block!
+  
+#+end_src
+
+** We can toggle the STATUS of a heading with SHIFT + left or right
+*** TODO something to do
+*** DONE something is done
+
+**** level 4! looks like this
+<s

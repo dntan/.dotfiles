@@ -1,0 +1,29 @@
+#+title: Khan Stats Prob
+#+author: Danny Tan
+#+date: <2024-01-14 Sun>
+
+* Probability and Statistics.
+
+** Areas of difficulty
+- Trends in catagorical data.
+  - round to nearest hundreth of a percent. `0.XX`
+
+
+** LaTeX packages needed to render pdf
+#+BEGIN_SRC Bash
+  sudo pacman -S texlive-latex texlive-latexextra texlive-plaingeneric
+
+#+END_SRC
+These packages are needed because\\
+texlive-latex has src_bash[:exports code]{pdflatex}\\
+texlive-latexextra has src_bash[:exports code]{wrapfig.sty}\\
+texlive-plaingeneric has src_bash[:exports code]{ulem.sty}\\
+
+
+** LaTeX examples
+
+\[\LaTeX\]
+
+LaTeX without the backslash!
+
+something then inline \(\LaTeX\) and then more text.

@@ -1,0 +1,8 @@
+#+title: Getting started with python venv
+#+author: Danny Tan
+
+* python virtual environment (venv)
+venv is part of the python standard library for using virtual environments in projects.
+
+** General workflow
+1. Run python -m venv project_venv

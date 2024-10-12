@@ -1,0 +1,23 @@
+#+title: Getting started with python venv
+#+author: Danny Tan
+
+* python virtual environment (venv)
+venv is part of the python standard library for using virtual environments in projects.
+
+** General workflow
+1. Run ~python -m venv project_venv~, Always create the venv within your project folder.
+2. add your project_venv to ,gitignore.
+3. Enter your venv with ~source project_venv/bin/activate~, this is specific to linux or macOS.
+4. To exit the venv use ~deactivate~
+
+** pip packages in a venv
+- install all the pip packages you need for your project.
+- pip freeze > requirements.txt
+- note: if you want to install based off an existing requirements.txt you can ~pip install -r requirements.txt~
+
+
+If you need to delete the venv, simply delete the project_venv folder. ~rm -rf project_venv~
+
+Don't create project directories in the venv. the venv should be something to throw away.
+
+

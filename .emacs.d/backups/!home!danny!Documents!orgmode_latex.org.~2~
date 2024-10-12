@@ -1,0 +1,13 @@
+#+Title: Testing LaTeX in Orgmode
+#+Author: Danny Tan
+#+STARTUP: latexpreview
+
+\[
+e^{i\pi} = -1
+\]
+
+\[
+\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
+\]
+
+*** Its possible to preview the above LaTeX with C-c C-x C-l toggle 

@@ -1,0 +1,65 @@
+#+title: Danny's emacs config
+
+* Danny's emacs config
+
+This is my first attempt to write my emacs config as an org file.
+
+** src_block template
+
+#+begin_src emacs-lisp
+
+;;code here...
+  
+#+end_src
+
+** Basics
+
+#+begin_src emacs-lisp
+
+  ;;This is Danny's emacs config file as init.el
+
+  (setq inhibit-startup-message t)
+
+  (scroll-bar-mode -1)        ; Disable visible scrollbar
+  (tool-bar-mode -1)          ; Disable the toolbar
+  (tooltip-mode -1)           ; Disable tooltips
+  (set-fringe-mode 10)        ; Give some breathing room
+
+  ;;(menu-bar-mode -1)            ; Disable the menu bar
+
+  (savehist-mode +1)
+  (setq savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
+
+  ;; Set up the visible bell
+  (setq visible-bell t)
+
+#+end_src
+
+** Backups
+
+#+begin_src emacs-lisp
+
+  (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
+  (setq delete-old-versions -1)
+  (setq version-control t)
+  (setq vc-make-backup-files t)
+  (setq auto-save-file-name-transforms '((".*" "~/.emacs.d/auto-save-list/" t)))
+
+#+end_src
+
+
+** Fonts
+
+#+begin_src emacs-lisp
+
+  (set-face-attribute 'default nil :font "DejaVu Sans" :height 130)
+  
+#+end_src
+
+** Themes
+
+#+begin_src emacs-lisp
+
+ (load-theme 'tango-dark)
+
+#+end_src

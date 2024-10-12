@@ -1,0 +1,47 @@
+* Focus
+
+** Magit
+https://www.youtube.com/watch?v=qPfJoeQCIvA
+
+*** useful for beginners and experts alike 
+
+*** I should start a org learning notes dir and then use git to manage the change then upload to github.
+
+merge or rebase??? I don't know the difference. I think I need some simple workflows to follow first...
+
+
+
+
+
+
+
+
+
+
+** SQL Essentials Certificate
+Done! -> also came with a sponsored certificate sign off.
+
+** GIT
+
+Workflows:
+
+1. I want to start a project on my local machine BUT then I want to track changes AND upload to an online repo.
+2. I want to clone a project that I found online and work with in on my local machine? 
+   
+* How do I want to work / practice with code?
+
+** OS Arcolinux
+- A very enjoyable OS - Erik's arcolinux website/yt channel have helped me learn so much about linux.
+- The stardard suite of applications available from the full arcolinux is fantastic.
+
+** GIT / GITHUB
+- Track code changes locally and push to remote repo for safe keeping and sharing
+  
+** Emacs
+- build and maintain my personal config file
+- Use it for thought process notes, design workflows review them
+- study notes --> LaTeX and Org mode
+- write code in emacs --> have autocomplete.
+- run code from emacs? use a shell? eshell?
+
+  How do I work with venv with python via emacs?

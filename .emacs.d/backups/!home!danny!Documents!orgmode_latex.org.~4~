@@ -1,0 +1,53 @@
+#+Title: Testing LaTeX in Orgmode
+#+Author: Danny Tan
+#+STARTUP: latexpreview
+
+\[
+e^{i\pi} = -1
+\]
+
+  \[
+\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
+\]
+
+*** Its possible to preview the above LaTeX with C-c C-x C-l toggle 
+
+\[\LaTeX \]
+
+
+Here is some inline \(\LaTeX\) as we can continue on writing this sentence.
+
+lets check out if we have a typesetting error?
+
+\[\frac{x}{y}\]
+
+need to look into :scale setting in the config file. the LaTeX renders are a little small for me to read in great detail.
+
+\(\Sigma\) is representative of sum of
+
+\(\sigma\) is representative of the standard deviation. certain measures away from the mean.
+
+\(\mu\) is representative of the population mean.
+
+\(r\) is the correlation co-efficient. how well the data fits the model. close to 1 is positive linear relationship
+closer to -1 is a negative linear relationship.
+
+\(z\) score measures how many standard deviations above or below the mean a data point is.
+
+It can be calculated by:
+
+\[
+z = \frac{x - \mu}{\sigma}
+\]
+
+
+
+
+mean of sample?
+
+\[\overline{x}\]
+
+
+Hello \(\bar{x}\) this and that is inline.
+
+

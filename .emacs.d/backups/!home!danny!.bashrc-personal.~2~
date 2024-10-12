@@ -1,0 +1,4 @@
+# This is my personal .bashrc file it will get added to the regular .bashrc automatically.
+
+# This is for using e to launch the emacsclient in the terminal.
+alias e="emacsclient -t"

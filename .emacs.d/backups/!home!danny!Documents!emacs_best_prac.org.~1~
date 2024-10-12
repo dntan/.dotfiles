@@ -1,0 +1,10 @@
+#+TITLE: Best Practices for Emacs
+#+Author:  DT
+#+Description: What we should be doing!
+
+* Best practices:
+
+1. Use the emacs daemon and emacsclient
+2. Use Dired file manager. C-x C-f /Quick terminal access -> vterm M-x vterm
+3. Emacs is a graphical program: take advantage of image previews and variable fonts!
+4. 

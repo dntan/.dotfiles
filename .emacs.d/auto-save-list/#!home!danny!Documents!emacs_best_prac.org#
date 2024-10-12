@@ -1,0 +1,35 @@
+#+TITLE: Best Practices for Emacs
+#+Author:  DT
+#+Description: What we should be doing!
+
+* Best practices:
+
+1. Use the emacs daemon and emacsclient
+2. Use Dired file manager. C-x C-f /Quick terminal access -> vterm M-x vterm
+3. Emacs is a graphical program: take advantage of image previews and variable fonts!
+4. Don't use the terminal version of emacs. -> no benefit from running it in the terminal. (don't bother)
+Only reason to use emacs in the terminal is via tty where there is no graphical server.
+
+*** Use the built in emacs manual, help guides.
+- Is there a guide on how to best use the help guides? e.g. with given examples. How do I set up line-numbers and configure
+  what files line numbers get excluded from.
+  e.g. like using the man pages on unix machines.
+   
+* Best Value prop:
+
+** Developers: Magit
+https://magit.vc/
+
+Needs git preinstalled to work.
+Needs git config to be set up to run the commands.
+I'm thinkig about having a setup script for my machine that dose the git config --global setups. I don't want to have to re-type it
+for every machine.
+REVIEW: Erik dubois "setupgit.sh"
+
+
+** Note takers and second brains
+https://orgmode.org/
+consider discovering orgroam as well. -> as this is covered in system crafters "second brain" series.
+
+
+

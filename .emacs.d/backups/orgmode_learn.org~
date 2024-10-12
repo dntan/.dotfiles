@@ -1,0 +1,24 @@
+#+Title: Org mode basics
+#+Date: <2024-06-15 Sat>
+
+
+* Org basics for Danny:
+
+** key learnings today:
+shift+tab = fold or unfold all section headings
+C-c + . = Insert a timestamp e.g. in the #+Date: metadata above
+
+** How do I configure my org mode with custom key bindings?
+- find a resource to learn this from DT or System crafters?
+
+  
+
+
+* Emacs and Emacsclient
+- side note to set up emacs --daemon
+  and use the emacsclient instead of regular emacs.
+  Save on start up config load time once, and run multiple sessions of
+  that emacs that don't require an individual session. e.g. if launched
+  from the terminal it won't hold that terminal session.
+
+  

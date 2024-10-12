@@ -1,0 +1,71 @@
+#+Title: Org mode basics
+#+Date: <2024-06-15 Sat>
+
+
+* Org basics for Danny:
+
+** key learnings today:
+shift+tab = fold or unfold all section headings
+C-c + . = Insert a timestamp e.g. in the #+Date: metadata above
+
+Should I store my emacs config and init.el file in the default ~/.emacs.d location?
+or have it preferences to .config with all the other arcolinux configurations?
+
+however during update or skel it may get removed. and I have to reinstate it every time
+
+
+** How do I configure my org mode with custom key bindings?
+- find a resource to learn this from DT or System crafters?
+
+  
+
+
+* Emacs and Emacsclient
+- side note to set up emacs --daemon
+  and use the emacsclient instead of regular emacs.
+
+if the daemon is launched and a emacs server is running
+
+we can use emacsclient -c -a 'emacs'
+
+-c = new window
+-a = alternative editor in this case we want to launch a regular emacs sesssion.
+
+
+  Save on start up config load time once, and run multiple sessions of
+  that emacs that don't require an individual session. e.g. if launched
+  from the terminal it won't hold that terminal session.
+
+  
+* Distrotube how to use a .org file as a config init.el file.
+
+In the init.el file
+
+#+begin_src emacs-lisp
+
+  (org-babel-load-file
+   (expand-file-name
+    "config.org"
+    user-emacs-directory))
+  
+#+end_src
+
+this pulls in the code from a org  file and create  an init.el
+
+Tomorrow I will try and set up a "config.org" in my .emacs.d folder
+and then replace my init.el file with the code above.
+
+* General keybindings
+general.el lots of different ways to add your own keybindings, e.g. keybindings for org mode.
+
+#+begin_src emacs-lisp
+
+  (org-babel-load-file
+   (expand-file-name
+    "config.org"
+    user-emacs-directory))
+  
+#+end_src
+
+** How can I make it easier to create src code blocks with a keybinding
+

@@ -1,0 +1,48 @@
+echo "Hello world"
+ll
+ls
+./hello 
+./a.out 
+cd ..
+ls
+cd Desktop/
+ls
+git clone https://github.com/dntan/.dotfiles
+cd .dotfiles/
+ls
+ls -la
+cd .git/
+ls
+nano config 
+cd ..
+cd Desktop/.dotfiles/
+cd ..
+mv -R .dotfiles/ .dotfiles_github/
+mv .dotfiles/ .dotfiles_github/
+ls
+ls -la
+cd .dotfiles/
+ls -la
+chmod +x setup.sh up.sh
+ls -la
+./setup.sh 
+./up.sh 
+ls
+cd ..
+ls
+ls -la
+ll
+ls
+ls -la
+git pull
+ls
+cd Personal/
+ls
+cd settings/
+ls
+git status
+git config
+cd ..
+git config -list
+git config --list
+git config --list

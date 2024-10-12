@@ -1,0 +1,43 @@
+#+TITLE: Automating system preferences
+#+Author:  Danny Tan
+
+* Discover how to maintain dotfiles.
+
+*** Exploring Arcolinux personal folder and .config
+
+1. Configure everything in the .config folder ~/.config in a fresh arcolinux install the way I like it.
+2. Archive it as tar.gz
+3. "personal" is an alias we can use to copy everything from the personal folder to the home dir.
+  
+** Key personal configurations
+1. Remapping capslock
+2. emacs install (vanilla minimum)
+3. custom config.org for my emacs package preferences.
+4. syncthing? can figure out how this works to locally sync a copy of personal configs
+ 
+** Other ideas:
+- i'd like to script the checksums process for new ISOs when trying things out on virtualbox,
+- What is .local? lets have a look.
+
+** Doom_emacs: The lazy version
+This is just method is just to use doom emacs
+
+- it is preferred to run emacs --daemon
+- Use emacsclient
+
+ 
+** Win10 ISO on vbox
+https://www.youtube.com/watch?v=CMGa6DsGIpc
+
+Download the ISO here:
+https://www.microsoft.com/en-us/software-download/windows10ISO
+
+
+I can consider investigating Chris Titus Window tool. It might be a good way to set up windows personalisation script for me.
+
+This gives an opportunity to learn how to make powershell scripts.
+
+
+** MacOS Ventura (14gb!)
+- How can we debloat macOS?
+- 

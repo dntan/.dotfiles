@@ -1,0 +1,17 @@
+#+title: Danny's emacs config
+
+* Danny's emacs config
+
+This is my first attempt to write my emacs config as an org file.
+
+** src_block template
+
+#+begin_src emacs-lisp
+
+
+  
+#+end_src
+
+** Basics
+
+** Backups

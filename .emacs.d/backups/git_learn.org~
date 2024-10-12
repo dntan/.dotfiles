@@ -1,0 +1,24 @@
+#+ Title: learn-git
+
+* Learn git and github with Erik Dubois
+
+This tutorial and workflow is for individuals not working with others.
+
+** Phase 1 Github account
+I have a github account already
+dn-tan@hotmail.com
+pw: cb20
+
+** Phase 2 Create a repo
+I created a public repo called ".dotfiles" under my github account.
+
+https://github.com/dntan/.dotfiles
+
+I then need to git clone this empty repo to my desktop.
+
+copy over "setup.sh" and up.sh
+
+read and study this shell files. they contain all the generic commands I need to use over and over again.
+understand what they do and then run them.
+
+The .sh files need to be runable so make sure we chmod +x <filename> <filename>
