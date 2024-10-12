@@ -12,6 +12,30 @@ C-c C-,
 brings up a menu to insert a source code block. this is better than typing it out.
 This is a standard gnu emacs keybinding
 we can use this if we did not turn on (org
+** Package Manager
+
+#+begin_src emacs-lisp
+
+  ;; Initialize package sources
+  (require 'package)
+
+  (setq package-archives '(("melpa" . "https://melpa.org/packages/")
+			   ("org" . "https://orgmode.org/elpa/")
+			   ("elpa" . "https://elpa.gnu.org/packages/")))
+
+  (package-initialize)
+  (unless package-archive-contents
+   (package-refresh-contents))
+
+  ;; Initialize use-package on non-Linux platforms
+  (unless (package-installed-p 'use-package)
+     (package-install 'use-package))
+
+  (require 'use-package)
+  (setq use-package-always-ensure t)
+
+#+end_src
+
 
 ** Basics
 *** GUI preferences.
@@ -72,18 +96,24 @@ we can use this if we did not turn on (org
 
 #+begin_src emacs-lisp
 
-  ;; Download Evil
-  (unless (package-installed-p 'evil)
-    (package-install 'evil))
+    ;; Download Evil
+    (unless (package-installed-p 'evil)
+      (package-install 'evil))
 
-  ;; Enable Evil
-  (require 'evil)
-  (evil-mode 1)
-
+    (setq evil-want-keybinding nil)  
+    ;; Enable Evil
+    (require 'evil)
+    (evil-mode 1)
+    
+  (use-package evil-collection
+    :ensure t
+    :after evil
+    :init
+    (evil-collection-init))
 #+end_src
 
 
-bnlibeinenumber** General keybindings
+** General keybindings
 Need package manager. then I can set custom keybindings here.
 
 #+begin_src emacs-lisp
@@ -145,30 +175,6 @@ Magit is a user friendly interface for git source control tool.
 #+begin_src emacs-lisp
   (use-package magit
   :ensure t)
-#+end_src
-
-** Package Manager
-
-#+begin_src emacs-lisp
-
-  ;; Initialize package sources
-  (require 'package)
-
-  (setq package-archives '(("melpa" . "https://melpa.org/packages/")
-			   ("org" . "https://orgmode.org/elpa/")
-			   ("elpa" . "https://elpa.gnu.org/packages/")))
-
-  (package-initialize)
-  (unless package-archive-contents
-   (package-refresh-contents))
-
-  ;; Initialize use-package on non-Linux platforms
-  (unless (package-installed-p 'use-package)
-     (package-install 'use-package))
-
-  (require 'use-package)
-  (setq use-package-always-ensure t)
-
 #+end_src
 
 ** Shells
