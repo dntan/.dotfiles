@@ -42,33 +42,35 @@ we can use this if we did not turn on (org
 
 #+begin_src emacs-lisp
 
-        ;;This is Danny's emacs config file as init.el
+            ;;This is Danny's emacs config file as init.el
 
-        (setq inhibit-startup-message t)
+            (setq inhibit-startup-message t)
 
-        (scroll-bar-mode -1)        ; Disable visible scrollbar
-        (tool-bar-mode -1)          ; Disable the toolbar
-        (tooltip-mode -1)           ; Disable tooltips
-        (set-fringe-mode 10)        ; Give some breathing room
+            (scroll-bar-mode -1)        ; Disable visible scrollbar
+            (tool-bar-mode -1)          ; Disable the toolbar
+            (tooltip-mode -1)           ; Disable tooltips
+            (set-fringe-mode 10)        ; Give some breathing room
 
-        ;;(menu-bar-mode -1)            ; Disable the menu bar
+            ;;(menu-bar-mode -1)            ; Disable the menu bar
 
-        (savehist-mode +1)
-        (setq savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
+            (savehist-mode +1)
+            (setq savehist-additional-variables '(kill-ring search-ring regexp-search-ring))
 
-        ;; Set up the visible bell
-        (setq visible-bell t)
+            ;; Set up the visible bell
+            (setq visible-bell t)
 
 
-  (column-number-mode)
-  (global-display-line-numbers-mode 1)
+ (column-number-mode)
+ (global-display-line-numbers-mode 1)
 
-    ;; Disable line numbers for some modes
-    (dolist (mode '(
-                    term-mode-hook
-                    eshell-mode-hook))
-      (add-hook mode (lambda () (display-line-numbers-mode 0))))
+ ;; Disable line numbers for some modes
+        (dolist (mode '(
+                        term-mode-hook
+                        eshell-mode-hook))
+          (add-hook mode (lambda () (display-line-numbers-mode 0))))
 
+ ;; word wrap in buffers 
+ (global-visual-line-mode 1)
 
 #+end_src
 
