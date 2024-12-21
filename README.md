@@ -14,8 +14,8 @@ a. Run `chadwm.sh`
 
 ### 2. emacs_on_arch:
 Review and run the `dannys_emacs` install script. this should:
-a. Install emacs if it doesn't exist already
-b. Copy over the repo emacs.d folder to `~/.config/` including my configured `config.org` and `init.el`.
-c. Configure caplocks to ctrl with `.Xmodmap`
-d. Check if on DE or TWM. Configure Emacs Daemon and Emacsclient accordingly. This will edit either autostartup or run.sh AND (sxhkdrc OR xfce4 ... something) 
-e. logout.
+1. Install emacs if it doesn't exist already
+2. Copy over the repo emacs.d folder to `~/.config/` including my configured `config.org` and `init.el`.
+3. Configure caplocks to ctrl with `.Xmodmap`
+4. Check if on DE or TWM. Configure Emacs Daemon and Emacsclient accordingly. This will edit either autostartup or run.sh AND (sxhkdrc OR xfce4 ... something) 
+5. logout.
